@@ -4,7 +4,7 @@ class News_post(models.Model):
     title = models.CharField('Название новости', max_length=50)  # Заголовок
     short_description = models.CharField('Краткое описание', max_length=200)  # Краткое описание
     text = models.TextField('Новость')  # Полный текст
-    pub_date = models.DateTimeField('Дата публикации')  # Дата публикации
+    pub_date = models.DateTimeField('Дата публикации', auto_now_add=True)  # Дата публикации
     author = models.CharField('Автор новости', max_length=50, default='Автор неизвестен')
 
     def __str__(self):
@@ -13,3 +13,4 @@ class News_post(models.Model):
     class Meta:
         verbose_name = 'Новость'
         verbose_name_plural = 'Новости'
+        ordering = ['-pub_date']
