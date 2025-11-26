@@ -66,9 +66,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Preview](4g.webp)
+![Preview](assets/4g.webp)
 
-![Preview](3.webp)
+![Preview](assets/3.webp)
 
 Conceptual News Django is a simple web application built with Django for publishing and displaying news. The project demonstrates basic functionality of working with data models, views, and templates using the Django framework.
 
